@@ -48,7 +48,9 @@ export default class ListTemplate implements DOMList {
 
       btn.addEventListener("click", () => {
         fullList.removeItem(ls.id);
+        fullList.save();
         this.render(fullList);
+
       })
 
       console.log(lsItem)
